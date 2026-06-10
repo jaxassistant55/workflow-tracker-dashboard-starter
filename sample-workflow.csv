@@ -1,0 +1,5 @@
+id,title,owner,status,value_usd,next_action,evidence
+wf-001,Import buyer spreadsheet,owner,pending,150,Confirm columns,Sample row only
+wf-002,Build static dashboard,owner,ready,150,Generate HTML,Sample row only
+wf-003,Deliver handoff note,owner,blocked,150,Wait for buyer approval,Sample row only
+
