@@ -5,6 +5,8 @@ Free public preview for a CSV-backed workflow tracker and static HTML dashboard.
 This repository exists as a lead surface for a fixed-scope service:
 
 - Paid offer: https://jaxassistant55.github.io/jax-micro-offer-studio/ai-workflow-tracker-sprint.html
+- Ready-to-buy route: https://jaxassistant55.github.io/jax-micro-offer-studio/ready-to-buy-ai-workflow-tracker-sprint.html
+- Prefilled inquiry page: https://jaxassistant55.github.io/workflow-tracker-dashboard-starter/inquiry.html
 - Live free preview: https://jaxassistant55.github.io/workflow-tracker-dashboard-starter/demo/
 - Repo order board: https://github.com/jaxassistant55/workflow-tracker-dashboard-starter/issues/1
 - Scope builder: https://jaxassistant55.github.io/jax-micro-offer-studio/ai-workflow-tracker-brief-builder.html

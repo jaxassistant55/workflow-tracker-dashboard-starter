@@ -5,6 +5,11 @@ title: "Paid inquiry: workflow tracker dashboard"
 labels: paid-inquiry, needs-scope
 ---
 
+## Fastest Buyer Links
+
+- Ready-to-buy route: https://jaxassistant55.github.io/jax-micro-offer-studio/ready-to-buy-ai-workflow-tracker-sprint.html
+- Prefilled inquiry page: https://jaxassistant55.github.io/workflow-tracker-dashboard-starter/inquiry.html
+
 ## Buyer Request
 
 - Workflow type:

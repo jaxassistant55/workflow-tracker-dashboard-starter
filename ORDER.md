@@ -3,6 +3,12 @@
 Use the public brief builder first:
 
 https://jaxassistant55.github.io/jax-micro-offer-studio/ai-workflow-tracker-brief-builder.html
+Ready-to-buy route:
+
+https://jaxassistant55.github.io/jax-micro-offer-studio/ready-to-buy-ai-workflow-tracker-sprint.html
+Prefilled inquiry page:
+
+https://jaxassistant55.github.io/workflow-tracker-dashboard-starter/inquiry.html
 
 Then open or comment on the order-board issue:
 
