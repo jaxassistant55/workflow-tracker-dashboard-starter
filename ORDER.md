@@ -26,4 +26,10 @@ https://github.com/jaxassistant55/jax-micro-offer-studio/issues/5
 - Final delivery includes the CSV, HTML dashboard, and handoff note.
 
 Do not post private data, payment screenshots, API keys, customer records, or sensitive files in GitHub issues.
+## Direct Repo Order Board
 
+Use this repo-specific order board for the lowest-friction public buyer comment path:
+
+https://github.com/jaxassistant55/workflow-tracker-dashboard-starter/issues/1
+
+The issue is not payment proof. It is only a public intake thread. Paid work or paid bundle transfer still requires accepted scope and external payment proof before delivery.

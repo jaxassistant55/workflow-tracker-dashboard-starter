@@ -6,6 +6,7 @@ This repository exists as a lead surface for a fixed-scope service:
 
 - Paid offer: https://jaxassistant55.github.io/jax-micro-offer-studio/ai-workflow-tracker-sprint.html
 - Live free preview: https://jaxassistant55.github.io/workflow-tracker-dashboard-starter/demo/
+- Repo order board: https://github.com/jaxassistant55/workflow-tracker-dashboard-starter/issues/1
 - Scope builder: https://jaxassistant55.github.io/jax-micro-offer-studio/ai-workflow-tracker-brief-builder.html
 - Order-board issue: https://github.com/jaxassistant55/jax-micro-offer-studio/issues/5
 - Price: $150 fixed-scope sprint
