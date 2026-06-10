@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jaxassistant55.github.io/workflow-tracker-dashboard-starter/sitemap.xml
