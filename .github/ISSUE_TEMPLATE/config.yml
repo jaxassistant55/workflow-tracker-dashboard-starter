@@ -1,5 +1,8 @@
 blank_issues_enabled: false
 contact_links:
+  - name: Payment activation after scope acceptance
+    url: https://jaxassistant55.github.io/jax-micro-offer-studio/payment-activation
+    about: Generate a buyer payment message from a seller-owned payment route after scope is accepted.
   - name: Ready-to-buy route
     url: https://jaxassistant55.github.io/jax-micro-offer-studio/ready-to-buy-ai-workflow-tracker-sprint.html
     about: Open the highest-intent buyer route for this offer.
