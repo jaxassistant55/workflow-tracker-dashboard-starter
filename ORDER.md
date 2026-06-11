@@ -17,6 +17,18 @@ https://github.com/jaxassistant55/jax-micro-offer-studio/issues/5
 
 ## Payment Activation
 
+## Exact $100 Starter Option
+
+If the buyer wants one smaller fixed-scope starter before the full offer, send them here first:
+
+https://jaxassistant55.github.io/jax-micro-offer-studio/first-100-fast-start.html
+
+Direct intake form:
+
+https://github.com/jaxassistant55/jax-micro-offer-studio/issues/new?template=first-100-fast-start.yml
+
+This issue/form still does not process payment. Paid work starts only after accepted scope and external payment proof through a seller-owned checkout, invoice, marketplace order, funded milestone, or payment request.
+
 After the buyer accepts the fixed scope, open:
 
 https://jaxassistant55.github.io/jax-micro-offer-studio/payment-activation
