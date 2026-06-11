@@ -7,6 +7,10 @@ labels: paid-inquiry, needs-scope
 
 ## Fastest Buyer Links
 
+- Paid offer action catalog: https://jaxassistant55.github.io/jax-micro-offer-studio/paid-offer-action-catalog.html
+- Paid catalog release: https://github.com/jaxassistant55/jax-micro-offer-studio/releases/tag/paid-offer-action-catalog-v1
+- Catalog CSV: https://jaxassistant55.github.io/jax-micro-offer-studio/paid-offer-action-catalog.csv
+- Proof monitor: https://jaxassistant55.github.io/jax-micro-offer-studio/proof-monitor.html
 - Payment activation after scope acceptance: https://jaxassistant55.github.io/jax-micro-offer-studio/payment-activation
 - Ready-to-buy route: https://jaxassistant55.github.io/jax-micro-offer-studio/ready-to-buy-ai-workflow-tracker-sprint.html
 - Prefilled inquiry page: https://jaxassistant55.github.io/workflow-tracker-dashboard-starter/inquiry.html

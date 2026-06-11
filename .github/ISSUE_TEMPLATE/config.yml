@@ -1,5 +1,8 @@
 blank_issues_enabled: false
 contact_links:
+- name: Paid offer action catalog
+  url: https://jaxassistant55.github.io/jax-micro-offer-studio/paid-offer-action-catalog.html
+  about: Pick the fastest paid route, structured form, payment handoff, and proof rule.
   - name: "Structured ready-to-pay form"
     url: https://github.com/jaxassistant55/workflow-tracker-dashboard-starter/issues/new?template=ready-to-pay-workflow-tracker-dashboard-starter.yml
     about: "Open the repo-specific structured intake for this paid route."

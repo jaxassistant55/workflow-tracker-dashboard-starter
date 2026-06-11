@@ -20,6 +20,18 @@ Then open or comment on the order-board issue:
 https://github.com/jaxassistant55/jax-micro-offer-studio/issues/5
 
 
+## Paid Offer Action Catalog
+
+If the buyer is choosing among multiple routes, start with the paid offer action catalog:
+
+https://jaxassistant55.github.io/jax-micro-offer-studio/paid-offer-action-catalog.html
+
+Catalog release:
+
+https://github.com/jaxassistant55/jax-micro-offer-studio/releases/tag/paid-offer-action-catalog-v1
+
+Use the catalog row for Workflow Tracker Dashboard Starter at $150, then move to the repo-specific structured form or order board for public-safe scope intake. The catalog is not payment proof. Paid work or transfer starts only after accepted scope and external payment proof through a seller-owned checkout, invoice, marketplace order, funded milestone, or payment request.
+
 ## Payment Activation
 
 ## Exact $100 Starter Option
