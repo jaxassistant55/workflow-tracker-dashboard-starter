@@ -1,26 +1,29 @@
 blank_issues_enabled: false
 contact_links:
-  - name: First $100 Fast Start
+  - name: "Structured ready-to-pay form"
+    url: https://github.com/jaxassistant55/workflow-tracker-dashboard-starter/issues/new?template=ready-to-pay-workflow-tracker-dashboard-starter.yml
+    about: "Open the repo-specific structured intake for this paid route."
+  - name: "First $100 Fast Start"
     url: https://jaxassistant55.github.io/jax-micro-offer-studio/first-100-fast-start.html
-    about: Pick one exact $100 fixed-scope starter and open the ready-to-pay intake.
-- name: First $100 sample pack
-  url: https://jaxassistant55.github.io/jax-micro-offer-studio/first-100-sample-pack.zip
-  about: Review synthetic example deliverables before opening a paid $100 starter intake.
-  - name: First $100 intake form
+    about: "Pick one exact $100 fixed-scope starter and open the ready-to-pay intake."
+  - name: "First $100 sample pack"
+    url: https://jaxassistant55.github.io/jax-micro-offer-studio/first-100-sample-pack.zip
+    about: "Review synthetic example deliverables before opening a paid route."
+  - name: "First $100 intake form"
     url: https://github.com/jaxassistant55/jax-micro-offer-studio/issues/new?template=first-100-fast-start.yml
-    about: Open the structured GitHub issue form for the exact $100 route.
-  - name: Payment activation after scope acceptance
+    about: "Open the structured GitHub issue form for the exact $100 route."
+  - name: "Payment activation after scope acceptance"
     url: https://jaxassistant55.github.io/jax-micro-offer-studio/payment-activation
-    about: Generate a buyer payment message from a seller-owned payment route after scope is accepted.
-  - name: Ready-to-buy route
-    url: https://jaxassistant55.github.io/jax-micro-offer-studio/ready-to-buy-ai-workflow-tracker-sprint.html
-    about: Open the highest-intent buyer route for this offer.
-  - name: Prefilled inquiry page
+    about: "Generate a buyer payment message from a seller-owned payment route after scope is accepted."
+  - name: "Prefilled inquiry page"
     url: https://jaxassistant55.github.io/workflow-tracker-dashboard-starter/inquiry.html
-    about: Start from a buyer-facing page before opening a GitHub issue.
-  - name: Repo order board
+    about: "Start from a buyer-facing page before opening a GitHub issue."
+  - name: "Repo order board"
     url: https://github.com/jaxassistant55/workflow-tracker-dashboard-starter/issues/1
-    about: Comment only when scope, deadline, and payment/proof route can be discussed safely.
-  - name: Paid offer page
+    about: "Comment only when scope, deadline, and payment/proof route can be discussed safely."
+  - name: "Paid offer page"
     url: https://jaxassistant55.github.io/jax-micro-offer-studio/ai-workflow-tracker-sprint.html
-    about: Review price, scope, proof rule, and delivery boundary.
+    about: "Review price, scope, proof rule, and delivery boundary."
+  - name: "Free preview"
+    url: https://jaxassistant55.github.io/workflow-tracker-dashboard-starter/
+    about: "Review the public preview before paid scope or transfer."

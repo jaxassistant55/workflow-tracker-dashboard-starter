@@ -1,0 +1,82 @@
+name: "Ready-to-pay Workflow Tracker Dashboard Starter"
+description: "Submit public-safe intake for the $150 fixed-scope paid service"
+title: "Ready to pay: Workflow Tracker Dashboard Starter"
+labels:
+  - paid-inquiry
+  - ready-to-pay
+  - needs-scope
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form only when you want the Workflow Tracker Dashboard Starter fixed-scope paid service and can provide public or buyer-authorized inputs.
+
+        Listed price: $150. This public issue is not payment proof. Paid work or transfer starts only after scope/terms are accepted and external payment proof exists through a seller-owned checkout, invoice, marketplace order, funded milestone, or payment request.
+
+        Do not post private data, credentials, payment screenshots, API keys, customer records, regulated private data, or sensitive files in this public issue.
+  - type: checkboxes
+    id: scope_boundary
+    attributes:
+      label: Scope and payment boundary
+      options:
+        - label: I understand this issue is public and I will not post private or sensitive data here.
+          required: true
+        - label: I accept the listed price is $150 before any extra custom work or transfer terms.
+          required: true
+        - label: I understand payment must happen through an external seller-owned route before paid work or transfer starts.
+          required: true
+        - label: I can provide authorized inputs or accept the transfer terms for this request.
+          required: true
+  - type: textarea
+    id: request_summary
+    attributes:
+      label: What do you want to buy?
+      description: Keep this public-safe and specific.
+      placeholder: "I want the Workflow Tracker Dashboard Starter fixed-scope paid service and can accept the listed boundary."
+    validations:
+      required: true
+  - type: textarea
+    id: authorized_inputs
+    attributes:
+      label: Public-safe inputs or transfer requirements
+      description: List only public, synthetic, or buyer-authorized details. Do not paste secrets or private files.
+      placeholder: |
+        - Workflow type.
+        - Required columns.
+        - Desired statuses.
+        - Up to 25 starter rows or sample notes.
+        - Any fields that should be hidden, excluded, or renamed.
+        - Delivery preference for the final ZIP.
+    validations:
+      required: true
+  - type: dropdown
+    id: desired_turnaround
+    attributes:
+      label: Desired turnaround after payment proof
+      options:
+        - Flexible, after payment proof
+        - 2 business days after payment proof and input receipt
+        - 5 business days after payment proof and input receipt
+        - Need to discuss before payment
+    validations:
+      required: true
+  - type: dropdown
+    id: payment_route_type
+    attributes:
+      label: Seller-owned payment route expected after scope acceptance
+      options:
+        - Seller checkout link
+        - Seller invoice
+        - Marketplace order or funded milestone
+        - Payment request
+        - Need to discuss before payment
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance_note
+    attributes:
+      label: Acceptance note
+      description: Confirm the deliverable or transfer, deadline, and any public-safe constraints.
+      placeholder: "I accept the listed $150 boundary and will wait for an external seller-owned payment route before paid work or transfer starts."
+    validations:
+      required: true
