@@ -23,6 +23,14 @@ If the buyer wants one smaller fixed-scope starter before the full offer, send t
 
 https://jaxassistant55.github.io/jax-micro-offer-studio/first-100-fast-start.html
 
+Synthetic examples before scoping:
+
+https://jaxassistant55.github.io/jax-micro-offer-studio/first-100-sample-pack.zip
+
+Sample README:
+
+https://jaxassistant55.github.io/jax-micro-offer-studio/first-100-sample-pack/README.md
+
 Direct intake form:
 
 https://github.com/jaxassistant55/jax-micro-offer-studio/issues/new?template=first-100-fast-start.yml

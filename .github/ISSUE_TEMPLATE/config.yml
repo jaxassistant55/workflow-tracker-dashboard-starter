@@ -3,6 +3,9 @@ contact_links:
   - name: First $100 Fast Start
     url: https://jaxassistant55.github.io/jax-micro-offer-studio/first-100-fast-start.html
     about: Pick one exact $100 fixed-scope starter and open the ready-to-pay intake.
+- name: First $100 sample pack
+  url: https://jaxassistant55.github.io/jax-micro-offer-studio/first-100-sample-pack.zip
+  about: Review synthetic example deliverables before opening a paid $100 starter intake.
   - name: First $100 intake form
     url: https://github.com/jaxassistant55/jax-micro-offer-studio/issues/new?template=first-100-fast-start.yml
     about: Open the structured GitHub issue form for the exact $100 route.
