@@ -14,6 +14,15 @@ Then open or comment on the order-board issue:
 
 https://github.com/jaxassistant55/jax-micro-offer-studio/issues/5
 
+
+## Payment Activation
+
+After the buyer accepts the fixed scope, open:
+
+https://jaxassistant55.github.io/jax-micro-offer-studio/payment-activation
+
+Paste a seller-owned checkout, invoice, marketplace order, funded milestone, or payment request URL. The generated message is only a payment handoff. Work starts only after external payment proof exists.
+
 ## Buyer Inputs Needed
 
 - Workflow type.
