@@ -50,14 +50,21 @@ def gh_json(*args)
   stdout.empty? ? {} : JSON.parse(stdout)
 end
 
-def issue_from_event
+def event_payload
   event_path = ENV["GITHUB_EVENT_PATH"].to_s
   return nil if event_path.empty? || !File.exist?(event_path)
 
-  event = JSON.parse(File.read(event_path))
-  event["issue"]
+  JSON.parse(File.read(event_path))
 rescue JSON::ParserError
   nil
+end
+
+def issue_from_event
+  event_payload && event_payload["issue"]
+end
+
+def comment_from_event
+  event_payload && event_payload["comment"]
 end
 
 def issue_number
@@ -78,6 +85,39 @@ def ready_issue?(issue)
   labels.any? { |label| %w[ready-to-pay ready-to-buy].include?(label) } ||
     title.start_with?("ready to pay:") ||
     title.start_with?("ready to buy:")
+end
+
+def paid_order_board_issue?(issue)
+  labels = label_names(issue).map(&:downcase)
+  title = issue["title"].to_s.downcase
+  labels.any? { |label| %w[paid-inquiry order-board product-transfer service-order needs-scope].include?(label) } ||
+    title.include?("order board") ||
+    title.include?("available now")
+end
+
+def ready_buyer_comment?(comment)
+  text = comment.to_s.downcase
+  return false if text.empty?
+
+  [
+    "ready to pay",
+    "ready-to-pay",
+    "ready to buy",
+    "ready-to-buy",
+    "i accept",
+    "please invoice",
+    "send invoice",
+    "payment link",
+    "checkout link",
+    "funded milestone",
+    "i want to buy",
+    "i want this",
+    "buy this",
+    "purchase this",
+    "place an order",
+    "start order",
+    "hire you"
+  ].any? { |phrase| text.include?(phrase) }
 end
 
 def non_buyer_claim_text?(text)
@@ -186,6 +226,7 @@ def emit(result)
 end
 
 issue = issue_from_event
+comment = comment_from_event
 number = issue_number
 issue = fetch_issue(REPO, number) if number && (issue.nil? || issue["number"].to_s != number)
 
@@ -199,20 +240,32 @@ if issue["pull_request"]
   exit 0
 end
 
-author = issue.dig("user", "login").to_s
-if ASSISTANT_AUTHORS.include?(author)
-  emit(status: "skipped", reason: "assistant_authored_issue", issue_number: issue["number"], author: author)
+unless issue["state"].to_s == "open"
+  emit(status: "skipped", reason: "issue_not_open", issue_number: issue["number"], state: issue["state"])
   exit 0
 end
 
-combined_text = [issue["title"], issue["body"]].join("\n")
-unless ready_issue?(issue)
-  emit(status: "skipped", reason: "not_ready_to_pay_or_buy", issue_number: issue["number"], labels: label_names(issue), title: issue["title"])
+labels = label_names(issue)
+issue_author = issue.dig("user", "login").to_s
+comment_author = comment.is_a?(Hash) ? comment.dig("user", "login").to_s : ""
+comment_body = comment.is_a?(Hash) ? comment["body"].to_s : ""
+trigger_author = comment_body.empty? ? issue_author : comment_author
+combined_text = [issue["title"], issue["body"], labels.join(" "), comment_body].join("\n")
+ready_from_issue = ready_issue?(issue)
+ready_from_comment = !comment_body.empty? && paid_order_board_issue?(issue) && ready_buyer_comment?(comment_body)
+
+unless ready_from_issue || ready_from_comment
+  emit(status: "skipped", reason: "not_ready_to_pay_or_buy", issue_number: issue["number"], labels: labels, title: issue["title"], comment_checked: !comment_body.empty?)
+  exit 0
+end
+
+if ASSISTANT_AUTHORS.include?(trigger_author)
+  emit(status: "skipped", reason: "assistant_authored_trigger", issue_number: issue["number"], author: trigger_author)
   exit 0
 end
 
 if non_buyer_claim_text?(combined_text)
-  emit(status: "skipped", reason: "non_buyer_bounty_or_wallet_claim", issue_number: issue["number"])
+  emit(status: "skipped", reason: "non_buyer_bounty_or_wallet_claim", issue_number: issue["number"], author: trigger_author)
   exit 0
 end
 
@@ -229,6 +282,10 @@ emit(
   repo: REPO,
   issue_number: issue["number"],
   offer: OFFER_TITLE,
+  author: trigger_author,
+  trigger: comment_body.empty? ? "issue" : "issue_comment",
+  ready_from_issue: ready_from_issue,
+  ready_from_comment: ready_from_comment,
   response_includes_terms: !TERMS_URL.empty? && body.include?(TERMS_URL),
   response_includes_acceptance: !EXACT_ACCEPTANCE.empty? && body.include?(EXACT_ACCEPTANCE),
   response_marker: MARKER
