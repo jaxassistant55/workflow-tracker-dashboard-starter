@@ -11,6 +11,10 @@ OFFER_PAGE = "https://jaxassistant55.github.io/jax-micro-offer-studio/ai-workflo
 READY_FORM = "https://github.com/jaxassistant55/workflow-tracker-dashboard-starter/issues/new?template=ready-to-pay-workflow-tracker-dashboard-starter.yml"
 ORDER_BOARD = "https://github.com/jaxassistant55/workflow-tracker-dashboard-starter/issues/1"
 PAYMENT_ACTIVATION = "https://jaxassistant55.github.io/jax-micro-offer-studio/payment-activation.html"
+ONE_SALE_PAYMENT_PACKETS = "https://jaxassistant55.github.io/jax-micro-offer-studio/one-sale-payment-packets.html"
+ONE_SALE_PAYMENT_PACKET = "https://jaxassistant55.github.io/jax-micro-offer-studio/one-sale-payment-packets.html#central-ai-workflow-tracker-sprint"
+ONE_SALE_PAYMENT_PACKET_ID = "OSP-20260616-04-AI-WORKFLOW-TRACKER-SPRINT"
+ONE_SALE_PAYMENT_PACKET_INVOICE_LINE = "AI Workflow Tracker Sprint fixed-scope service - $150 - accepted scope or product transfer per https://jaxassistant55.github.io/jax-micro-offer-studio/ai-workflow-tracker-sprint.html"
 PAYMENT_HANDOFF = "https://jaxassistant55.github.io/jax-micro-offer-studio/standalone-payment-handoff.html#workflow-tracker-dashboard-starter"
 PROOF_MONITOR = "https://jaxassistant55.github.io/jax-micro-offer-studio/proof-monitor.html"
 PAID_CATALOG = "https://jaxassistant55.github.io/jax-micro-offer-studio/paid-offer-action-catalog.html"
@@ -193,6 +197,27 @@ def terms_block
   end
 end
 
+
+def payment_packet_block
+  if !ONE_SALE_PAYMENT_PACKET.empty?
+    <<~MD
+
+      Matching one-sale payment packet:
+      - Packet: #{ONE_SALE_PAYMENT_PACKET}
+      - Packet ID: #{ONE_SALE_PAYMENT_PACKET_ID}
+      - Invoice line: #{ONE_SALE_PAYMENT_PACKET_INVOICE_LINE}
+      - Use this packet after acceptance to paste a seller-owned checkout, invoice, marketplace order, funded milestone, or payment request URL into the buyer message.
+    MD
+  else
+    <<~MD
+
+      One-sale payment packets:
+      - Packet index: #{ONE_SALE_PAYMENT_PACKETS}
+      - This route has no exact one-sale packet; use the packet index only if the buyer moves into a $100+ one-sale route, otherwise use the standalone payment handoff below.
+    MD
+  end
+end
+
 def response_body
   <<~MD
     #{MARKER}
@@ -207,11 +232,13 @@ def response_body
     Exact next steps:
     1. Keep the scope public-safe in this issue. Do not post passwords, payment cards, tax identifiers, private regulated details, confidential files, or screenshots of payment accounts.
     2. Confirm the exact deliverable, deadline, acceptance proof, and any buyer-owned inputs that can safely be shared.
-    3. Use payment activation only after scope or transfer terms are accepted: #{PAYMENT_ACTIVATION}
-    4. Payment must happen through a seller-owned external checkout, invoice, marketplace order, payment request, or funded milestone. This GitHub issue is not a checkout and is not payment proof.
-    5. Paid work or transfer starts only after payment is posted, funded, released, payable, cleared, or otherwise externally provable.
-    6. After delivery, save the delivery artifact/status and buyer acceptance or platform completion status.
-    #{terms_block}
+3. Use payment activation only after scope or transfer terms are accepted: #{PAYMENT_ACTIVATION}
+4. Use the matching one-sale payment packet below when this is a $100+ one-sale route.
+5. Payment must happen through a seller-owned external checkout, invoice, marketplace order, payment request, or funded milestone. This GitHub issue is not a checkout and is not payment proof.
+6. Paid work or transfer starts only after payment is posted, funded, released, payable, cleared, or otherwise externally provable.
+7. After delivery, save the delivery artifact/status and buyer acceptance or platform completion status.
+#{payment_packet_block}
+#{terms_block}
 
     Payment handoff after exact acceptance: #{PAYMENT_HANDOFF}
         Paid catalog: #{PAID_CATALOG}
@@ -287,6 +314,9 @@ emit(
   ready_from_issue: ready_from_issue,
   ready_from_comment: ready_from_comment,
   response_includes_terms: !TERMS_URL.empty? && body.include?(TERMS_URL),
-  response_includes_acceptance: !EXACT_ACCEPTANCE.empty? && body.include?(EXACT_ACCEPTANCE),
+response_includes_acceptance: !EXACT_ACCEPTANCE.empty? && body.include?(EXACT_ACCEPTANCE),
+matched_payment_packet: ONE_SALE_PAYMENT_PACKET.empty? ? nil : ONE_SALE_PAYMENT_PACKET,
+response_includes_payment_packet: !ONE_SALE_PAYMENT_PACKET.empty? && body.include?(ONE_SALE_PAYMENT_PACKET),
+response_includes_payment_packet_index: body.include?(ONE_SALE_PAYMENT_PACKETS),
   response_marker: MARKER
 )
