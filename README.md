@@ -62,6 +62,18 @@ The paid sprint can produce:
 
 Not included: payment processing, login systems, private scraping, hosted backend work, or ongoing maintenance unless separately scoped.
 
+<!-- standalone-payment-handoff:start -->
+## Direct Payment Handoff After Exact Acceptance
+
+- Route-specific payment handoff: https://jaxassistant55.github.io/jax-micro-offer-studio/standalone-payment-handoff.html#workflow-tracker-dashboard-starter
+- Ready-to-pay form: https://github.com/jaxassistant55/workflow-tracker-dashboard-starter/issues/new?template=ready-to-pay-workflow-tracker-dashboard-starter.yml
+- Standalone terms: https://jaxassistant55.github.io/jax-micro-offer-studio/standalone-offer-terms.html#workflow-tracker-dashboard-starter
+- Proof monitor: https://jaxassistant55.github.io/jax-micro-offer-studio/proof-monitor.html
+- Invoice line: Workflow Tracker Dashboard Starter fixed-scope paid work - $150
+- Gross sales needed to reach $100: 1
+
+Use this handoff only after a real buyer selects Workflow Tracker Dashboard Starter, pastes the exact acceptance statement, and you have a seller-owned checkout, invoice, marketplace order, funded milestone, or payment request URL. The handoff page and generated message count $0 until external payment proof, delivery proof, and posted/released/payable/cleared funds exist.
+<!-- standalone-payment-handoff:end -->
 ## Revenue Boundary
 
 This public repository is a free sample and counts as $0 by itself. Money counts only after a real buyer accepts scope, pays through a user-owned payment route, receives the work, and payment is posted, released, payable, or cleared.

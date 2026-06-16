@@ -20,6 +20,9 @@ body:
         Standalone terms page:
         https://jaxassistant55.github.io/jax-micro-offer-studio/standalone-offer-terms.html#workflow-tracker-dashboard-starter
 
+        Route-specific payment handoff after exact acceptance:
+        https://jaxassistant55.github.io/jax-micro-offer-studio/standalone-payment-handoff.html#workflow-tracker-dashboard-starter
+
         Exact acceptance statement to paste below:
         I accept the Workflow Tracker Dashboard Starter fixed-scope work terms at $150. I understand work or transfer starts only after seller-owned external payment proof exists; I will provide only public or buyer-owned/buyer-authorized non-sensitive inputs; the deliverable is limited to the public preview, README/ORDER scope, and accepted ready-to-pay form details; and credentials, account login work, unauthorized private files, confidential regulated data handling, purchasing, publishing changes, ongoing support, custom implementation beyond the accepted scope, or extra revisions are not included unless separately agreed before payment.
   - type: textarea

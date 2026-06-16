@@ -24,6 +24,10 @@ labels: paid-inquiry, needs-scope
 - First $100 sample pack: https://jaxassistant55.github.io/jax-micro-offer-studio/first-100-sample-pack.zip
 - Release sample ZIP: https://github.com/jaxassistant55/jax-micro-offer-studio/releases/download/first-100-fast-start-v1/first-100-sample-pack.zip
 
+<!-- standalone-payment-handoff:start -->
+- Direct payment handoff after exact acceptance: https://jaxassistant55.github.io/jax-micro-offer-studio/standalone-payment-handoff.html#workflow-tracker-dashboard-starter
+- Standalone terms and exact acceptance: https://jaxassistant55.github.io/jax-micro-offer-studio/standalone-offer-terms.html#workflow-tracker-dashboard-starter
+<!-- standalone-payment-handoff:end -->
 ## Buyer Request
 
 - Workflow type:

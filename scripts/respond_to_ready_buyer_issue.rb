@@ -11,6 +11,7 @@ OFFER_PAGE = "https://jaxassistant55.github.io/jax-micro-offer-studio/ai-workflo
 READY_FORM = "https://github.com/jaxassistant55/workflow-tracker-dashboard-starter/issues/new?template=ready-to-pay-workflow-tracker-dashboard-starter.yml"
 ORDER_BOARD = "https://github.com/jaxassistant55/workflow-tracker-dashboard-starter/issues/1"
 PAYMENT_ACTIVATION = "https://jaxassistant55.github.io/jax-micro-offer-studio/payment-activation.html"
+PAYMENT_HANDOFF = "https://jaxassistant55.github.io/jax-micro-offer-studio/standalone-payment-handoff.html#workflow-tracker-dashboard-starter"
 PROOF_MONITOR = "https://jaxassistant55.github.io/jax-micro-offer-studio/proof-monitor.html"
 PAID_CATALOG = "https://jaxassistant55.github.io/jax-micro-offer-studio/paid-offer-action-catalog.html"
 TERMS_URL = "https://jaxassistant55.github.io/jax-micro-offer-studio/standalone-offer-terms.html#workflow-tracker-dashboard-starter"
@@ -172,7 +173,8 @@ def response_body
     6. After delivery, save the delivery artifact/status and buyer acceptance or platform completion status.
     #{terms_block}
 
-    Paid catalog: #{PAID_CATALOG}
+    Payment handoff after exact acceptance: #{PAYMENT_HANDOFF}
+        Paid catalog: #{PAID_CATALOG}
     Proof monitor: #{PROOF_MONITOR}
 
     Money rule: count $0 until a real buyer accepts the fixed scope or transfer terms, pays through a seller-owned external route, receives delivery, and payment is posted/released/payable/cleared.
