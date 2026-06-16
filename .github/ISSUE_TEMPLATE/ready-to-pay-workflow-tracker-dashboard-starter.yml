@@ -14,6 +14,23 @@ body:
         Listed price: $150. This public issue is not payment proof. Paid work or transfer starts only after scope/terms are accepted and external payment proof exists through a seller-owned checkout, invoice, marketplace order, funded milestone, or payment request.
 
         Do not post private data, credentials, payment screenshots, API keys, customer records, regulated private data, or sensitive files in this public issue.
+  - type: markdown
+    attributes:
+      value: |
+        Standalone terms page:
+        https://jaxassistant55.github.io/jax-micro-offer-studio/standalone-offer-terms.html#workflow-tracker-dashboard-starter
+
+        Exact acceptance statement to paste below:
+        I accept the Workflow Tracker Dashboard Starter fixed-scope work terms at $150. I understand work or transfer starts only after seller-owned external payment proof exists; I will provide only public or buyer-owned/buyer-authorized non-sensitive inputs; the deliverable is limited to the public preview, README/ORDER scope, and accepted ready-to-pay form details; and credentials, account login work, unauthorized private files, confidential regulated data handling, purchasing, publishing changes, ongoing support, custom implementation beyond the accepted scope, or extra revisions are not included unless separately agreed before payment.
+  - type: textarea
+    id: exact_terms_acceptance
+    attributes:
+      label: Exact terms acceptance statement
+      description: Paste the exact statement from the terms page. Material edits must be clarified before payment.
+      placeholder: |
+        I accept the Workflow Tracker Dashboard Starter fixed-scope work terms at $150. I understand work or transfer starts only after seller-owned external payment proof exists; I will provide only public or buyer-owned/buyer-authorized non-sensitive inputs; the deliverable is limited to the public preview, README/ORDER scope, and accepted ready-to-pay form details; and credentials, account login work, unauthorized private files, confidential regulated data handling, purchasing, publishing changes, ongoing support, custom implementation beyond the accepted scope, or extra revisions are not included unless separately agreed before payment.
+    validations:
+      required: true
   - type: checkboxes
     id: scope_boundary
     attributes:

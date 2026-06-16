@@ -65,3 +65,18 @@ Not included: payment processing, login systems, private scraping, hosted backen
 ## Revenue Boundary
 
 This public repository is a free sample and counts as $0 by itself. Money counts only after a real buyer accepts scope, pays through a user-owned payment route, receives the work, and payment is posted, released, payable, or cleared.
+
+<!-- standalone-offer-terms:start -->
+## Terms And Exact Acceptance
+
+- Standalone terms: https://jaxassistant55.github.io/jax-micro-offer-studio/standalone-offer-terms.html#workflow-tracker-dashboard-starter
+- Terms CSV: https://jaxassistant55.github.io/jax-micro-offer-studio/standalone_offer_terms.csv
+- Payment activation after accepted scope: https://jaxassistant55.github.io/jax-micro-offer-studio/payment-activation.html
+- Proof monitor: https://jaxassistant55.github.io/jax-micro-offer-studio/proof-monitor.html
+
+Exact acceptance statement:
+
+> I accept the Workflow Tracker Dashboard Starter fixed-scope work terms at $150. I understand work or transfer starts only after seller-owned external payment proof exists; I will provide only public or buyer-owned/buyer-authorized non-sensitive inputs; the deliverable is limited to the public preview, README/ORDER scope, and accepted ready-to-pay form details; and credentials, account login work, unauthorized private files, confidential regulated data handling, purchasing, publishing changes, ongoing support, custom implementation beyond the accepted scope, or extra revisions are not included unless separately agreed before payment.
+
+This repository remains a public lead surface and counts $0 until a real buyer accepts terms, pays through a seller-owned external route, receives delivery or transfer, and payment is posted, released, payable, or cleared.
+<!-- standalone-offer-terms:end -->
