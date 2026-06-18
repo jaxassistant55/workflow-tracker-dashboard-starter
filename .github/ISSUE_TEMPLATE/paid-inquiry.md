@@ -5,6 +5,17 @@ title: "Paid inquiry: workflow tracker dashboard"
 labels: paid-inquiry, needs-scope
 ---
 
+## Fastest $100 Start
+
+- Fastest route page: https://jaxassistant55.github.io/jax-micro-offer-studio/fastest-100-start.html
+- Route CSV: https://jaxassistant55.github.io/jax-micro-offer-studio/fastest_100_start.csv
+- Payment packets after accepted scope: https://jaxassistant55.github.io/jax-micro-offer-studio/one-sale-payment-packets.html
+- Payment activation after accepted scope: https://jaxassistant55.github.io/jax-micro-offer-studio/payment-activation
+- Proof monitor: https://jaxassistant55.github.io/jax-micro-offer-studio/proof-monitor.html
+
+Use this path when the buyer wants the shortest fixed-scope route to a $100 paid order. This issue is intake only; money counts only after accepted scope, seller-owned external payment proof, delivery proof, and posted/released/payable/cleared funds exist.
+
+
 ## Fastest Buyer Links
 
 - Paid offer action catalog: https://jaxassistant55.github.io/jax-micro-offer-studio/paid-offer-action-catalog.html
