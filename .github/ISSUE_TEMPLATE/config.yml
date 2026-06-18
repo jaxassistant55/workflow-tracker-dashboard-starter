@@ -1,32 +1,32 @@
 blank_issues_enabled: false
 contact_links:
-- name: Paid offer action catalog
+- name: "Structured ready-to-pay form"
+  url: https://github.com/jaxassistant55/workflow-tracker-dashboard-starter/issues/new?template=ready-to-pay-workflow-tracker-dashboard-starter.yml
+  about: "Open the repo-specific paid intake form for this exact route."
+- name: "Paid offer action catalog"
   url: https://jaxassistant55.github.io/jax-micro-offer-studio/paid-offer-action-catalog.html
-  about: Pick the fastest paid route, structured form, payment handoff, and proof rule.
-  - name: "Structured ready-to-pay form"
-    url: https://github.com/jaxassistant55/workflow-tracker-dashboard-starter/issues/new?template=ready-to-pay-workflow-tracker-dashboard-starter.yml
-    about: "Open the repo-specific structured intake for this paid route."
-  - name: "First $100 Fast Start"
-    url: https://jaxassistant55.github.io/jax-micro-offer-studio/first-100-fast-start.html
-    about: "Pick one exact $100 fixed-scope starter and open the ready-to-pay intake."
-  - name: "First $100 sample pack"
-    url: https://jaxassistant55.github.io/jax-micro-offer-studio/first-100-sample-pack.zip
-    about: "Review synthetic example deliverables before opening a paid route."
-  - name: "First $100 intake form"
-    url: https://github.com/jaxassistant55/jax-micro-offer-studio/issues/new?template=first-100-fast-start.yml
-    about: "Open the structured GitHub issue form for the exact $100 route."
-  - name: "Payment activation after scope acceptance"
-    url: https://jaxassistant55.github.io/jax-micro-offer-studio/payment-activation
-    about: "Generate a buyer payment message from a seller-owned payment route after scope is accepted."
-  - name: "Prefilled inquiry page"
-    url: https://jaxassistant55.github.io/workflow-tracker-dashboard-starter/inquiry.html
-    about: "Start from a buyer-facing page before opening a GitHub issue."
-  - name: "Repo order board"
-    url: https://github.com/jaxassistant55/workflow-tracker-dashboard-starter/issues/1
-    about: "Comment only when scope, deadline, and payment/proof route can be discussed safely."
-  - name: "Paid offer page"
-    url: https://jaxassistant55.github.io/jax-micro-offer-studio/ai-workflow-tracker-sprint.html
-    about: "Review price, scope, proof rule, and delivery boundary."
-  - name: "Free preview"
-    url: https://jaxassistant55.github.io/workflow-tracker-dashboard-starter/
-    about: "Review the public preview before paid scope or transfer."
+  about: "Pick the fastest paid route, structured form, payment handoff, and proof rule."
+- name: "Sample-output gallery"
+  url: https://jaxassistant55.github.io/jax-micro-offer-studio/one-sale-sample-output-gallery.html
+  about: "Review prepared sample outputs before opening a paid route."
+- name: "Payment activation after scope acceptance"
+  url: https://jaxassistant55.github.io/jax-micro-offer-studio/payment-activation
+  about: "Generate a buyer payment message from a seller-owned payment route after scope is accepted."
+- name: "Route-specific payment handoff"
+  url: https://jaxassistant55.github.io/jax-micro-offer-studio/standalone-payment-handoff.html#workflow-tracker-dashboard-starter
+  about: "Use only after exact buyer acceptance and a seller-owned payment URL exist."
+- name: "Prefilled inquiry page"
+  url: https://jaxassistant55.github.io/workflow-tracker-dashboard-starter/inquiry.html
+  about: "Start from a buyer-facing page before opening a GitHub issue."
+- name: "Repo order board"
+  url: https://github.com/jaxassistant55/workflow-tracker-dashboard-starter/issues/1
+  about: "Comment only when scope, deadline, and payment/proof route can be discussed safely."
+- name: "Paid offer page"
+  url: https://jaxassistant55.github.io/jax-micro-offer-studio/ai-workflow-tracker-sprint.html
+  about: "Review price, scope, proof rule, and delivery boundary."
+- name: "Free preview"
+  url: https://jaxassistant55.github.io/workflow-tracker-dashboard-starter/
+  about: "Review the public preview before paid scope or transfer."
+- name: "Proof monitor"
+  url: https://jaxassistant55.github.io/jax-micro-offer-studio/proof-monitor.html
+  about: "Check public buyer/download signals and the money proof boundary."
