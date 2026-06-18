@@ -11,6 +11,8 @@ OFFER_PAGE = "https://jaxassistant55.github.io/jax-micro-offer-studio/ai-workflo
 READY_FORM = "https://github.com/jaxassistant55/workflow-tracker-dashboard-starter/issues/new?template=ready-to-pay-workflow-tracker-dashboard-starter.yml"
 ORDER_BOARD = "https://github.com/jaxassistant55/workflow-tracker-dashboard-starter/issues/1"
 PAYMENT_ACTIVATION = "https://jaxassistant55.github.io/jax-micro-offer-studio/payment-activation.html"
+FASTEST_100_START = "https://jaxassistant55.github.io/jax-micro-offer-studio/fastest-100-start.html"
+FASTEST_100_START_CSV = "https://jaxassistant55.github.io/jax-micro-offer-studio/fastest_100_start.csv"
 ONE_SALE_PAYMENT_PACKETS = "https://jaxassistant55.github.io/jax-micro-offer-studio/one-sale-payment-packets.html"
 SAMPLE_GALLERY = "https://jaxassistant55.github.io/jax-micro-offer-studio/one-sale-sample-output-gallery.html"
 SAMPLE_GALLERY_RELEASE = "https://github.com/jaxassistant55/jax-micro-offer-studio/releases/tag/one-sale-sample-output-gallery-v1"
@@ -231,7 +233,11 @@ def response_body
     Listed price: #{PRICE}
     Offer page: #{OFFER_PAGE}
     Structured form: #{READY_FORM}
-    Order board: #{ORDER_BOARD}
+Order board: #{ORDER_BOARD}
+Fastest $100 route:
+- Start here if the buyer has not picked an exact paid route yet: #{FASTEST_100_START}
+- Route CSV: #{FASTEST_100_START_CSV}
+- If this standalone route is below $100, use Fastest $100 Start to pick a $100+ route before sending any seller-owned payment URL.
 
     Exact next steps:
     1. Keep the scope public-safe in this issue. Do not post passwords, payment cards, tax identifiers, private regulated details, confidential files, or screenshots of payment accounts.
@@ -329,6 +335,8 @@ response_includes_acceptance: !EXACT_ACCEPTANCE.empty? && body.include?(EXACT_AC
 matched_payment_packet: ONE_SALE_PAYMENT_PACKET.empty? ? nil : ONE_SALE_PAYMENT_PACKET,
 response_includes_payment_packet: !ONE_SALE_PAYMENT_PACKET.empty? && body.include?(ONE_SALE_PAYMENT_PACKET),
 response_includes_payment_packet_index: body.include?(ONE_SALE_PAYMENT_PACKETS),
+response_includes_fastest_100_start: body.include?(FASTEST_100_START),
+response_includes_fastest_100_start_csv: body.include?(FASTEST_100_START_CSV),
 response_includes_sample_gallery: body.include?(SAMPLE_GALLERY),
 response_includes_sample_gallery_release: body.include?(SAMPLE_GALLERY_RELEASE),
   response_marker: MARKER
