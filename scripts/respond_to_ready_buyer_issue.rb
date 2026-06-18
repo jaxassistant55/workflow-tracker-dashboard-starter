@@ -12,6 +12,10 @@ READY_FORM = "https://github.com/jaxassistant55/workflow-tracker-dashboard-start
 ORDER_BOARD = "https://github.com/jaxassistant55/workflow-tracker-dashboard-starter/issues/1"
 PAYMENT_ACTIVATION = "https://jaxassistant55.github.io/jax-micro-offer-studio/payment-activation.html"
 ONE_SALE_PAYMENT_PACKETS = "https://jaxassistant55.github.io/jax-micro-offer-studio/one-sale-payment-packets.html"
+SAMPLE_GALLERY = "https://jaxassistant55.github.io/jax-micro-offer-studio/one-sale-sample-output-gallery.html"
+SAMPLE_GALLERY_RELEASE = "https://github.com/jaxassistant55/jax-micro-offer-studio/releases/tag/one-sale-sample-output-gallery-v1"
+SAMPLE_GALLERY_CSV = "https://jaxassistant55.github.io/jax-micro-offer-studio/one_sale_sample_output_gallery.csv"
+SAMPLE_GALLERY_JSON = "https://jaxassistant55.github.io/jax-micro-offer-studio/one_sale_sample_output_gallery.json"
 ONE_SALE_PAYMENT_PACKET = "https://jaxassistant55.github.io/jax-micro-offer-studio/one-sale-payment-packets.html#central-ai-workflow-tracker-sprint"
 ONE_SALE_PAYMENT_PACKET_ID = "OSP-20260616-04-AI-WORKFLOW-TRACKER-SPRINT"
 ONE_SALE_PAYMENT_PACKET_INVOICE_LINE = "AI Workflow Tracker Sprint fixed-scope service - $150 - accepted scope or product transfer per https://jaxassistant55.github.io/jax-micro-offer-studio/ai-workflow-tracker-sprint.html"
@@ -233,10 +237,17 @@ def response_body
     1. Keep the scope public-safe in this issue. Do not post passwords, payment cards, tax identifiers, private regulated details, confidential files, or screenshots of payment accounts.
     2. Confirm the exact deliverable, deadline, acceptance proof, and any buyer-owned inputs that can safely be shared.
 3. Use payment activation only after scope or transfer terms are accepted: #{PAYMENT_ACTIVATION}
-4. Use the matching one-sale payment packet below when this is a $100+ one-sale route.
-5. Payment must happen through a seller-owned external checkout, invoice, marketplace order, payment request, or funded milestone. This GitHub issue is not a checkout and is not payment proof.
-6. Paid work or transfer starts only after payment is posted, funded, released, payable, cleared, or otherwise externally provable.
-7. After delivery, save the delivery artifact/status and buyer acceptance or platform completion status.
+4. Use the sample-output gallery to confirm the expected deliverable shape before payment: https://jaxassistant55.github.io/jax-micro-offer-studio/one-sale-sample-output-gallery.html
+5. Use the matching one-sale payment packet below when this is a $100+ one-sale route.
+6. Payment must happen through a seller-owned external checkout, invoice, marketplace order, payment request, or funded milestone. This GitHub issue is not a checkout and is not payment proof.
+7. Paid work or transfer starts only after payment is posted, funded, released, payable, cleared, or otherwise externally provable.
+8. After delivery, save the delivery artifact/status and buyer acceptance or platform completion status.
+Sample-output proof before payment:
+- Gallery: https://jaxassistant55.github.io/jax-micro-offer-studio/one-sale-sample-output-gallery.html
+- Release packet: https://github.com/jaxassistant55/jax-micro-offer-studio/releases/tag/one-sale-sample-output-gallery-v1
+- CSV: https://jaxassistant55.github.io/jax-micro-offer-studio/one_sale_sample_output_gallery.csv
+- JSON: https://jaxassistant55.github.io/jax-micro-offer-studio/one_sale_sample_output_gallery.json
+- These samples and release downloads count $0 until accepted scope, external payment proof, delivery proof, and posted/released/payable/cleared funds exist.
 #{payment_packet_block}
 #{terms_block}
 
@@ -318,5 +329,7 @@ response_includes_acceptance: !EXACT_ACCEPTANCE.empty? && body.include?(EXACT_AC
 matched_payment_packet: ONE_SALE_PAYMENT_PACKET.empty? ? nil : ONE_SALE_PAYMENT_PACKET,
 response_includes_payment_packet: !ONE_SALE_PAYMENT_PACKET.empty? && body.include?(ONE_SALE_PAYMENT_PACKET),
 response_includes_payment_packet_index: body.include?(ONE_SALE_PAYMENT_PACKETS),
+response_includes_sample_gallery: body.include?(SAMPLE_GALLERY),
+response_includes_sample_gallery_release: body.include?(SAMPLE_GALLERY_RELEASE),
   response_marker: MARKER
 )
